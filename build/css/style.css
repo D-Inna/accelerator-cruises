@@ -2092,6 +2092,69 @@ button,
     min-width: 768px;
   }
 
+  .promo {
+    min-height: 522px;
+  }
+
+  .promo__title {
+    font-size: 50px;
+    line-height: 60px;
+    padding-left: 45px;
+  }
+
+  .promo__description {
+    font-size: 18px;
+    line-height: 21px;
+    padding-left: 45px;
+  }
+
+  .hero {
+    padding: 100px 45px;
+  }
+
+  .hero__title {
+    font-size: 26px;
+    line-height: 36px;
+    padding: 0;
+  }
+
+  .advantages {
+    min-height: 588px;
+    padding: 100px 45px;
+  }
+
+  .advantages__image {
+    height: 588px;
+  }
+
+  .advantages__container ul {
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
+
+  .advantages__container li {
+    padding: 20px;
+  }
+
+  .catalog {
+    padding: 100px 60px;
+  }
+
+  .catalog__title {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .catalog__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .catalog__item {
+    max-width: 309px;
+  }
+
   .address__map {
     height: 335px;
     width: 324px;
@@ -2143,6 +2206,84 @@ button,
   .main-container {
     max-width: 767px;
     min-width: 320px;
+  }
+
+  .promo {
+    min-height: 384px;
+  }
+
+  .promo__title {
+    font-size: 36px;
+    line-height: 45px;
+    padding-left: 15px;
+  }
+
+  .promo__description {
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 15px;
+  }
+
+  .hero {
+    padding: 65px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .hero__title {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .advantages {
+    min-height: 997px;
+    padding: 65px 15px;
+  }
+
+  .advantages__image {
+    height: 997px;
+  }
+
+  .advantages__title {
+    margin-bottom: 40px;
+  }
+
+  .advantages__container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .catalog {
+    padding: 65px 25px;
+  }
+
+  .catalog__title {
+    margin-bottom: 40px;
+    font-size: 24px;
+  }
+
+  .catalog__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .catalog__item {
+    max-width: 270px;
   }
 
   .address__map {

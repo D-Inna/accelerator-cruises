@@ -1,6 +1,14 @@
 .promo {
   background-color: $background-color;
   min-height: 534px;
+
+  @media (max-width: $vp-1023) {
+    min-height: 522px;
+  }
+
+  @media (max-width: $vp-767) {
+    min-height: 384px;
+  }
 }
 
 .promo__image {
@@ -27,6 +35,18 @@
   padding-top: 175px;
   margin-bottom: 30px;
   padding-left: 14%;
+
+  @media (max-width: $vp-1023) {
+    font-size: 50px;
+    line-height: 60px;
+    padding-left: 45px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 36px;
+    line-height: 45px;
+    padding-left: 15px;
+  }
 }
 
 .promo__description {
@@ -38,4 +58,16 @@
   z-index: 2;
   margin: 0;
   padding-left: 14%;
+
+  @media (max-width: $vp-1023) {
+    font-size: 18px;
+    line-height: 21px;
+    padding-left: 45px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 15px;
+  }
 }

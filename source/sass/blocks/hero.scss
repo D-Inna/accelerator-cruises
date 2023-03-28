@@ -7,6 +7,16 @@
   grid-template-columns: 1fr 1fr;
   min-height: 566px;
   column-gap: 88px;
+
+  @media (max-width: $vp-1023) {
+    padding: 100px 45px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 65px 15px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .hero__title {
@@ -14,6 +24,17 @@
   margin: 0;
   margin-bottom: 40px;
   padding-top: 64px;
+
+  @media (max-width: $vp-1023) {
+    font-size: 26px;
+    line-height: 36px;
+    padding: 0;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 24px;
+    line-height: 33px;
+  }
 }
 
 .hero__description {
