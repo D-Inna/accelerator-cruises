@@ -1,0 +1,24 @@
+.hero {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 1200px;
+  padding: 120px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 566px;
+  column-gap: 88px;
+}
+
+.hero__title {
+  @include title-semibold;
+  margin: 0;
+  margin-bottom: 40px;
+  padding-top: 64px;
+}
+
+.hero__description {
+  @include description-text;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}

@@ -1,0 +1,40 @@
+.main-footer {
+  width: 100vw;
+  min-width: 1024px;
+  margin: 0 auto;
+  background-color: $text-color;
+  padding: 0 20px;
+}
+
+.main-footer__container {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 1160px;
+  padding: 50px 0;
+  display: flex;
+}
+
+.main-footer__logo {
+  display: block;
+  align-self: center;
+  margin-right: 40px;
+}
+
+.main-footer__nav {
+  min-width: 594px;
+  align-self: center;
+}
+
+.main-footer__social {
+  margin-left: auto;
+  align-self: flex-end;
+}
+
+.main-footer:hover,
+.main-footer:focus {
+  opacity: 0.7;
+}
+
+.main-footer:active {
+  opacity: 0.3;
+}

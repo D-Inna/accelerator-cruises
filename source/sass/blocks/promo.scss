@@ -1,0 +1,41 @@
+.promo {
+  background-color: $background-color;
+  min-height: 534px;
+}
+
+.promo__image {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  object-fit: cover;
+  z-index: 1;
+
+  @media (min-width: $vp-1024) {
+    height: 650px;
+  }
+}
+
+.promo__title {
+  position: relative;
+  font-family: $ff-montserrat-bold;
+  font-size: 54px;
+  line-height: 66px;
+  font-weight: 700;
+  margin: 0;
+  color: $color-nav;
+  z-index: 2;
+  padding-top: 175px;
+  margin-bottom: 30px;
+  padding-left: 14%;
+}
+
+.promo__description {
+  @include description-text;
+  position: relative;
+  font-size: 20px;
+  line-height: 24px;
+  color: $color-nav;
+  z-index: 2;
+  margin: 0;
+  padding-left: 14%;
+}
