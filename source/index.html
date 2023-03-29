@@ -19,19 +19,18 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper wrapper--mobile">
     <header class="header">
       <div class="container header__container" data-header>
         <a class="header__logo" href="#">
-          <picture>
-            <source media="(max-width: 767px)" srcset="./img/logo-mobile.svg">
-            <img src="./img/logo.svg" width="70" height="38" alt="Логотип компании круизы в Антарктику.">
-          </picture>
+            <img class="header__image" data-image src="./img/logo.svg" width="70" height="38" alt="Логотип компании круизы в Антарктику.">
         </a>
-        <button class="header__toggle" type="button" data-burger>
+        <div class="header__icon" data-burger>
+          <span></span>
           <span class="visually-hidden">Открыть меню.</span>
-        </button>
-        <nav class="header__nav">
+        </div>
+        <nav class="header__nav" data-nav>
+          <img class="header__image-mobile" src="./img/logo-mobile.svg" width="42px" height="22px" alt="Логотип компании круизы в Антарктику.">
           <ul class="header__nav-list user-list">
             <li class="user-list__item">
               <a class="user-list__link" href="#advantages" data-close-menu>
@@ -57,6 +56,7 @@
         </nav>
       </div>
     </header>
+
     <main class="main-container">
 
       <section class="promo">

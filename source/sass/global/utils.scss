@@ -17,6 +17,14 @@
   }
 }
 
+.wrapper--mobile {
+  @media (max-width: $vp-767) {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+  }
+}
+
 .rouble {
   font-family: $ff-rouble;
   /* stylelint-disable */

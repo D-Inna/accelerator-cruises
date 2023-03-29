@@ -9,6 +9,17 @@
   @media (max-width: $vp-1023) {
     column-gap: 23px;
   }
+
+  @media (max-width: $vp-767) {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+
+.user-list__item {
+  @media (max-width: $vp-767) {
+    flex-wrap: wrap;
+  }
 }
 
 .user-list__link {
@@ -21,6 +32,12 @@
   @media (max-width: $vp-1023) {
     font-size: 14px;
     line-height: 17px;
+  }
+
+  @media (max-width: $vp-767) {
+    @include title-medium;
+    line-height: 21px;
+    color: #011c40;
   }
 }
 
