@@ -21,6 +21,14 @@
   @media (min-width: $vp-1024) {
     height: 650px;
   }
+
+  @media (max-width: $vp-1023) {
+    height: 568px;
+  }
+
+  @media (max-width: $vp-767) {
+    height: 430px;
+  }
 }
 
 .promo__title {

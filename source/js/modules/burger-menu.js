@@ -5,7 +5,7 @@ const burgerMenu = () => {
 
   if (iconHeader) {
     iconHeader.addEventListener('click', function () {
-      document.body.classList.toggle('[data-lock]');
+      document.body.classList.toggle('lock');
       iconHeader.classList.toggle('is-open');
       navHeader.classList.toggle('is-open');
       imageHeader.classList.toggle('is-open');
@@ -14,10 +14,10 @@ const burgerMenu = () => {
 
   navHeader.addEventListener('click', function () {
     if (iconHeader.classList.contains('is-open')) {
-      document.body.classList.remove('[data-lock]');
       iconHeader.classList.remove('is-open');
       navHeader.classList.remove('is-open');
       imageHeader.classList.remove('is-open');
+      document.body.classList.remove('lock');
     }
   });
 
@@ -27,6 +27,7 @@ const burgerMenu = () => {
       document.querySelector('[data-nav]').classList.remove(('is-open'));
       document.querySelector('[data-burger]').classList.remove(('is-open'));
       document.querySelector('[data-image]').classList.remove('is-open');
+      document.body.classList.remove('lock');
     }
   });
 };

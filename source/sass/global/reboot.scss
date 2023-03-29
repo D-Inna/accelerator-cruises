@@ -33,9 +33,17 @@ body {
   height: 100%;
 
   background-color: $color-default-white;
+}
 
-  & [data-lock] {
-    overflow: hidden;
+body.lock {
+  overflow: hidden;
+
+  .main-container {
+    opacity: 0.5;
+  }
+
+  .header {
+    background-color: #ffffff;
   }
 }
 
@@ -118,12 +126,12 @@ input[type="number"] {
 select,
 textarea,
 input:matches([type="email"],
-  [type="number"],
-  [type="password"],
-  [type="search"],
-  [type="tel"],
-  [type="text"],
-  [type="url"]) {
+[type="number"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="url"]) {
   appearance: none;
 }
 

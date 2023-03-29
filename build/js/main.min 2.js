@@ -169,7 +169,7 @@ var burgerMenu = function burgerMenu() {
   var imageHeader = document.querySelector('[data-image]');
   if (iconHeader) {
     iconHeader.addEventListener('click', function () {
-      document.body.classList.toggle('lock');
+      document.body.classList.toggle('[data-lock]');
       iconHeader.classList.toggle('is-open');
       navHeader.classList.toggle('is-open');
       imageHeader.classList.toggle('is-open');
@@ -177,10 +177,10 @@ var burgerMenu = function burgerMenu() {
   }
   navHeader.addEventListener('click', function () {
     if (iconHeader.classList.contains('is-open')) {
+      document.body.classList.remove('[data-lock]');
       iconHeader.classList.remove('is-open');
       navHeader.classList.remove('is-open');
       imageHeader.classList.remove('is-open');
-      document.body.classList.remove('lock');
     }
   });
   window.addEventListener('keydown', function (e) {
@@ -188,7 +188,6 @@ var burgerMenu = function burgerMenu() {
       document.querySelector('[data-nav]').classList.remove('is-open');
       document.querySelector('[data-burger]').classList.remove('is-open');
       document.querySelector('[data-image]').classList.remove('is-open');
-      document.body.classList.remove('lock');
     }
   });
 };

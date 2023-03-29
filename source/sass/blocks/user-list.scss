@@ -41,26 +41,13 @@
   }
 }
 
-// .user-list__item {
-//   @media (max-width: 767px) {
-//     opacity: 0;
-//     transition: all ease-out 0.15s;
-//     transform: translateX(-15px);
-//   }
+.user-list__link--footer {
+  @media (max-width: $vp-1023) {
+    font-size: 12px;
+    line-height: 14px;
+  }
 
-//   &:not(:last-child) {
-//     margin: 0 55px 0 0;
-
-//     @media (max-width: 1279px) {
-//       margin: 0 35px 0 0;
-//     }
-
-//     @media (max-width: 1023px) {
-//       margin: 0 0 40px 0;
-//     }
-
-//     @media (max-width: 767px) {
-//       margin: 0 0 36px 0;
-//     }
-//   }
-// }
+  @media (max-width: $vp-767) {
+    color: $color-nav;
+  }
+}

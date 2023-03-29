@@ -4,6 +4,16 @@
   margin: 0 auto;
   background-color: $text-color;
   padding: 0 20px;
+
+  @media (max-width: $vp-1023) {
+    min-width: 768px;
+    padding: 0 45px;
+  }
+
+  @media (max-width: $vp-767) {
+    min-width: 320px;
+    padding: 0 15px;
+  }
 }
 
 .main-footer__container {
@@ -12,17 +22,43 @@
   max-width: 1160px;
   padding: 50px 0;
   display: flex;
+
+  @media (max-width: $vp-767) {
+    flex-direction: column;
+    row-gap: 30px;
+    padding-top: 40px;
+  }
 }
 
 .main-footer__logo {
   display: block;
   align-self: center;
   margin-right: 40px;
+
+  @media (max-width: $vp-1023) {
+    width: 38px;
+    height: 20px;
+    margin-right: 25px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 42px;
+    height: 22px;
+    margin: 0;
+  }
 }
 
 .main-footer__nav {
   min-width: 594px;
   align-self: center;
+
+  @media (max-width: $vp-1023) {
+    min-width: 381px;
+  }
+
+  @media (max-width: $vp-767) {
+    min-width: 130px;
+  }
 }
 
 .main-footer__social {

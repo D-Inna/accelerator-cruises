@@ -5,4 +5,15 @@
   column-gap: 27px;
   padding: 0;
   margin: 0;
+
+  @media (max-width: $vp-1023) {
+    column-gap: 22px;
+  }
+}
+
+.social__network {
+  @media (max-width: $vp-1023) {
+    width: 16px;
+    height: 16px;
+  }
 }
