@@ -13,6 +13,7 @@
   @media (max-width: $vp-767) {
     min-width: 320px;
     padding: 0 15px;
+    margin: 0;
   }
 }
 
@@ -27,6 +28,7 @@
     flex-direction: column;
     row-gap: 30px;
     padding-top: 40px;
+    margin: 0;
   }
 }
 
@@ -42,6 +44,7 @@
   }
 
   @media (max-width: $vp-767) {
+    align-self: start;
     width: 42px;
     height: 22px;
     margin: 0;
@@ -58,12 +61,19 @@
 
   @media (max-width: $vp-767) {
     min-width: 130px;
+    position: relative;
+    align-self: start;
   }
 }
 
 .main-footer__social {
   margin-left: auto;
   align-self: flex-end;
+
+  @media (max-width: $vp-767) {
+    margin-left: 0;
+    margin-right: auto;
+  }
 }
 
 .main-footer:hover,

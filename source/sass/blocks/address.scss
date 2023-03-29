@@ -90,6 +90,10 @@
   @media (max-width: $vp-1023) {
     width: 324px;
   }
+
+  @media (max-width: $vp-767) {
+    width: 290px;
+  }
 }
 
 .address__description {

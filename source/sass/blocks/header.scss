@@ -1,6 +1,5 @@
 .header {
   width: 100vw;
-  //min-height: 120px;
   min-width: 1024px;
   margin: 0 auto;
   background-color: $background-color;
@@ -35,10 +34,9 @@
   @media (max-width: $vp-767) {
     display: flex;
     justify-content: space-between;
-    max-width: 737;
+    max-width: 737px;
     padding: 25px 0;
     margin: 0;
-    //max-width: 737px;
   }
 }
 
@@ -67,27 +65,17 @@
     position: fixed;
     z-index: 3;
     top: 0;
-    right: -100%;                             //!!!!!!!!!!!!!!!!!!!!!!!!
+    right: -100vw;
     width: 96%;
     height: 100%;
+    min-width: 240px;
     background-color: #f9fbfd;
-    padding: 75px 30px 30px 15px;
-    transition: right 0.3s ease 0s;             //!!!!!!!!!!!!!!!!!!!!!!!!
+    padding: 23px 30px 30px 15px;
+    transition: right 0.3s ease 0s;
     overflow: auto;
 
-    // &::before {
-    //   content: "";
-    //   //position: fixed;
-    //   width: 100%;
-    //   top: 0;
-    //   left: 0;
-    //   height: 70px;
-    //   background-color: #0b0e10;
-    //    //background-color: #f9fbfd;
-    // }
-
     &.is-open {
-      right: 0;                                //!!!!!!!!!!!!!!!!!!!!!!!!
+      right: 0;
     }
   }
 }
@@ -105,8 +93,8 @@
 
   @media (max-width: $vp-767) {
     display: block;
-    margin-top: -7.5%;
-    margin-bottom: 4%;
+    margin-top: 0;
+    margin-bottom: 9%;
   }
 }
 

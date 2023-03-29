@@ -86,7 +86,7 @@
   }
 
   @media (max-width: $vp-767) {
-    font-style: 16px;
+    font-size: 16px;
     line-height: 22px;
   }
 }
@@ -96,6 +96,10 @@
   color: $color-nav;
   margin: 0;
   margin-bottom: 35px;
+
+  @media (max-width: $vp-767) {
+    text-align: center;
+  }
 }
 
 .form__modal-auth {
@@ -106,6 +110,11 @@
 
   @media (max-width: $vp-1023) {
     margin: 0 auto;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 290px;
+    padding: 40px 30px;
   }
 }
 
@@ -179,7 +188,6 @@
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 1px;
-  text-transform: uppercase;
   background-color: $color-nav;
   color: $text-color;
   padding: 15px 20px;
@@ -187,6 +195,10 @@
   text-align: center;
   border: none;
   cursor: pointer;
+
+  @media (max-width: $vp-767) {
+    min-width: 230px;
+  }
 }
 
 .form__consent button:hover {
@@ -214,6 +226,10 @@
   appearance: none;
   cursor: pointer;
   margin-right: 5px;
+
+  @media (max-width: $vp-767) {
+    width: 23px;
+  }
 }
 
 .form__consent input[type="checkbox"]:checked::after {
