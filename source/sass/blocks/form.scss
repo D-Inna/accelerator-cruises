@@ -23,17 +23,17 @@
 
   @media (max-width: $vp-1023) {
     flex-direction: column;
-    padding: 100px 174px;
+    padding: 88px 174px;
   }
 
   @media (max-width: $vp-767) {
-    padding: 65px 15px;
+    padding: 59px 15px;
   }
 }
 
 .form__wrapper-desktop {
   @media (min-width: $vp-1024) {
-    padding-top: 15%;
+    padding-top: 15.6%;
     margin-right: 8%;
   }
 }
@@ -65,7 +65,7 @@
   @media (max-width: $vp-1023) {
     font-size: 34px;
     line-height: 51px;
-    margin-bottom: 25px;
+    margin-bottom: 0;
     text-align: center;
   }
 
@@ -79,15 +79,23 @@
   @include title-medium;
   font-weight: 400;
   margin: 0;
+  margin-top: 7px;
 
   @media (max-width: $vp-1023) {
-    margin-bottom: 60px;
+    margin-bottom: 53px;
     text-align: center;
+    margin-top: 4px;
   }
 
   @media (max-width: $vp-767) {
     font-size: 16px;
     line-height: 22px;
+    margin-top: 13px;
+    margin-bottom: 35px;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -95,16 +103,18 @@
   @include title-medium;
   color: $color-nav;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 
   @media (max-width: $vp-767) {
     text-align: center;
+    line-height: 26px;
   }
 }
 
 .form__modal-auth {
   background-color: $text-color;
   padding: 50px;
+  padding-top: 43px;
   width: 403px;
   margin-left: auto;
 
@@ -114,12 +124,16 @@
 
   @media (max-width: $vp-767) {
     width: 290px;
-    padding: 40px 30px;
+    padding: 32px 30px 40px;
   }
 }
 
 .form__modal-auth div {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 21px;
+  }
 }
 
 .form__modal-auth input {
@@ -187,7 +201,6 @@
   font-family: $ff-montserrat-semibold;
   font-size: 14px;
   line-height: 14px;
-  letter-spacing: 1px;
   background-color: $color-nav;
   color: $text-color;
   padding: 15px 20px;
@@ -195,9 +208,11 @@
   text-align: center;
   border: none;
   cursor: pointer;
+  margin-top: 7px;
 
   @media (max-width: $vp-767) {
     min-width: 230px;
+    margin-top: 5px;
   }
 }
 
@@ -229,6 +244,7 @@
 
   @media (max-width: $vp-767) {
     width: 23px;
+    margin-right: 12px;
   }
 }
 

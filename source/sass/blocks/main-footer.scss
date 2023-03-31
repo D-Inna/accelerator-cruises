@@ -24,10 +24,15 @@
   padding: 50px 0;
   display: flex;
 
+  @media (max-width: $vp-1023) {
+    padding-top: 48px;
+  }
+
   @media (max-width: $vp-767) {
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 22px;
     padding-top: 40px;
+    padding-bottom: 33px;
     margin: 0;
   }
 }
@@ -63,6 +68,12 @@
     min-width: 130px;
     position: relative;
     align-self: start;
+  }
+}
+
+.main-footer__nav-list {
+  @media (max-width: $vp-767) {
+    row-gap: 8px;
   }
 }
 

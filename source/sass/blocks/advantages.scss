@@ -3,16 +3,16 @@
   width: 100%;
   min-height: 562px;
   padding: 0 20px;
-  padding-top: 120px;
+  padding-top: 110px;
 
   @media (max-width: $vp-1023) {
     min-height: 588px;
-    padding: 100px 45px;
+    padding: 88px 45px;
   }
 
   @media (max-width: $vp-767) {
     min-height: 997px;
-    padding: 65px 15px;
+    padding: 55px 15px;
   }
 }
 
@@ -23,13 +23,33 @@
 
   h3 {
     @include title-medium;
-    margin: 25px 0 20px;
+    margin: 12px 0 11px;
     line-height: 25px;
+
+    @media (min-width: $vp-1024) {
+      br {
+        display: none;
+      }
+    }
+
+    @media (max-width: $vp-1023) {
+      margin-top: 9px;
+    }
   }
 
   p {
     @include description-text;
     margin: 0;
+  }
+}
+
+.advantages__container .advantages__title-card {
+  @media (max-width: $vp-1023) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 13px;
   }
 }
 
@@ -57,11 +77,16 @@
 .advantages__title {
   @include title-semibold;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 49px;
   text-align: center;
 
+  @media (max-width: $vp-1023) {
+    font-size: 26px;
+  }
+
   @media (max-width: $vp-767) {
-    margin-bottom: 40px;
+    margin-bottom: 26px;
+    font-size: 24px;
   }
 }
 
@@ -74,20 +99,38 @@
   column-gap: 40px;
 
   @media (max-width: $vp-1023) {
-    row-gap: 30px;
+    column-gap: 30px;
   }
 
   @media (max-width: $vp-767) {
     display: flex;
     flex-direction: column;
+    row-gap: 30px;
   }
 }
 
 .advantages__container li {
   background-color: $color-nav;
   padding: 30px;
+  padding-bottom: 46px;
 
   @media (max-width: $vp-1023) {
-    padding: 20px;
+    padding: 22px 5px 20px 20px;
+  }
+}
+
+.advantages__icon {
+  @media (max-width: $vp-1023) {
+    &-liner {
+      width: 21px;
+    }
+
+    &-mark {
+      width: 27px;
+    }
+
+    &-ship {
+      width: 36px;
+    }
   }
 }

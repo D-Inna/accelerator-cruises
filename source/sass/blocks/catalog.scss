@@ -2,21 +2,21 @@
   margin: 0 auto;
   height: 100%;
   max-width: 1170px;
-  padding: 95px 10px;
+  padding: 85px 20px 150px;
 
   @media (max-width: $vp-1023) {
-    padding: 100px 60px;
+    padding: 90px 60px 190px;
   }
 
   @media (max-width: $vp-767) {
-    padding: 65px 25px;
+    padding: 55px 25px 65px;
   }
 }
 
 .catalog__title {
   @include title-semibold;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 49px;
   text-align: center;
 
   @media (max-width: $vp-1023) {
@@ -25,7 +25,7 @@
   }
 
   @media (max-width: $vp-767) {
-    margin-bottom: 40px;
+    margin-bottom: 29px;
     font-size: 24px;
   }
 }
@@ -36,10 +36,12 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2%;
+  gap: 3%;
+  row-gap: 4%;
 
   @media (max-width: $vp-1023) {
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 2%;
   }
 
   @media (max-width: $vp-767) {
@@ -94,7 +96,7 @@
   grid-column: 1/-1;
   grid-row: 1/-1;
   display: grid;
-  grid-template-rows: 55px;
+  grid-template-rows: 49px;
   overflow-y: scroll;
 
   dl {
@@ -102,20 +104,28 @@
     line-height: 15px;
     color: $color-nav;
     margin: 0;
-    margin-top: 5vh;
+    margin-top: 6vh;
     padding-left: 25px;
+
+    @media (max-width: $vp-1023) {
+      padding-left: 37px;
+    }
+
+    @media (max-width: $vp-767) {
+      padding-left: 25px;
+    }
   }
 
   dt {
     font-family: $ff-montserrat-medium;
     line-height: 14px;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
   }
 
   dd {
     margin: 0;
-    margin-bottom: 20px;
-    line-height: 14px;
+    margin-bottom: 17px;
+    line-height: 19px;
   }
 }
 
@@ -123,20 +133,36 @@
   @include title-semibold;
   font-size: 14px;
   line-height: 21px;
-  padding: 15px 46px;
+  padding: 9px 26px;
   background-color: $color-nav;
   text-align: center;
   display: block;
   grid-column: 1/-1;
   grid-row: 2/3;
-  margin: 10px 8% 10%;
+  margin: 10px 9% 14%;
+
+  @media (max-width: $vp-1023) {
+    margin: 10px 11% 11%;
+  }
+
+  @media (max-width: $vp-767) {
+    margin: 10px 9% 13%;
+  }
 }
 
 .catalog__wrapper h3 {
   @include title-medium;
   line-height: 15px;
   color: $color-nav;
-  margin: 5vh 0 0 25px;
+  margin: 5vh 0 0 27px;
+
+  @media (max-width: $vp-1023) {
+    margin-left: 35px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-left: 26px;
+  }
 }
 
 .catalog__item h3 {
@@ -144,6 +170,14 @@
   align-self: end;
   z-index: 2;
   margin-bottom: 30px;
+
+  @media (max-width: $vp-1023) {
+    margin-bottom: 35px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 24px;
+  }
 }
 
 .catalog__item:hover,

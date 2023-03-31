@@ -10,7 +10,7 @@
 
   @media (max-width: $vp-767) {
     min-height: 703px;
-    padding: 65px 15px;
+    padding: 57px 15px;
   }
 }
 
@@ -33,10 +33,10 @@
 .address__container {
   display: flex;
   flex-direction: column;
-  padding-top: 81px;
+  padding-top: 74px;
 
   @media (max-width: $vp-1023) {
-    padding-top: 72px;
+    padding-top: 65px;
   }
 
   @media (max-width: $vp-767) {
@@ -99,10 +99,14 @@
 .address__description {
   @include title-medium;
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 33px;
 
   @media (max-width: $vp-1023) {
-    margin-bottom: 40px;
+    margin-bottom: 28px;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -112,13 +116,18 @@
   font-size: 16px;
   line-height: 24px;
 
-  @media (max-width: $vp-1024) {
+  @media (min-width: $vp-1024) {
     br {
       display: none;
     }
   }
 }
 
+.address__icon {
+  margin-bottom: -6px;
+  margin-right: 6px;
+}
+
 .address__link {
-  margin-bottom: 33px;
+  margin-bottom: 20px;
 }

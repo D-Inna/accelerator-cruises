@@ -9,6 +9,10 @@
   @media (max-width: $vp-1023) {
     column-gap: 22px;
   }
+
+  @media (max-width: $vp-767) {
+    column-gap: 20px;
+  }
 }
 
 .social__network {

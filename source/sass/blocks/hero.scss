@@ -2,33 +2,44 @@
   margin: 0 auto;
   height: 100%;
   max-width: 1200px;
-  padding: 120px 20px;
+  padding: 128px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 566px;
-  column-gap: 88px;
+  min-height: 574px;
+  column-gap: 40px;
 
   @media (max-width: $vp-1023) {
-    padding: 100px 45px;
+    padding: 136px 45px 94px;
+    column-gap: 30px;
+    min-height: 464px;
   }
 
   @media (max-width: $vp-767) {
-    padding: 65px 15px;
+    padding: 117px 15px 85px;
     display: flex;
     flex-direction: column;
+    row-gap: 44px;
   }
 }
 
 .hero__title {
   @include title-semibold;
-  margin: 0;
-  margin-bottom: 40px;
-  padding-top: 64px;
+  margin: 0 0 23px 0;
+  padding-top: 56px;
+
+  @media (min-width: $vp-1024) {
+    br {
+      display: none;
+    }
+  }
+
 
   @media (max-width: $vp-1023) {
     font-size: 26px;
     line-height: 36px;
     padding: 0;
+    margin-top: -9px;
+    margin-bottom: 15px;
   }
 
   @media (max-width: $vp-767) {
