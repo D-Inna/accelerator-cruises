@@ -1527,7 +1527,7 @@ button,
   text-align: center;
 }
 
-.advantages__container ul {
+.advantages__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -1540,7 +1540,7 @@ button,
   column-gap: 40px;
 }
 
-.advantages__container li {
+.advantages__item {
   background-color: #f9fbfd;
   padding: 30px;
   padding-bottom: 46px;
@@ -2232,13 +2232,13 @@ button,
     font-size: 26px;
   }
 
-  .advantages__container ul {
+  .advantages__list {
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
   }
 
-  .advantages__container li {
+  .advantages__item {
     padding: 22px 5px 20px 20px;
   }
 
@@ -2624,7 +2624,7 @@ button,
     font-size: 24px;
   }
 
-  .advantages__container ul {
+  .advantages__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
