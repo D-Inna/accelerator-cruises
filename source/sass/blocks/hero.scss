@@ -22,7 +22,7 @@
   }
 }
 
-.hero__title {
+.hero__wrapper h2 {
   @include title-semibold;
   margin: 0 0 23px 0;
   padding-top: 56px;
@@ -48,7 +48,7 @@
   }
 }
 
-.hero__description {
+.hero__wrapper p {
   @include description-text;
   font-size: 16px;
   line-height: 24px;

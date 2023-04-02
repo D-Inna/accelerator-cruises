@@ -1407,7 +1407,7 @@ button,
   z-index: 1;
 }
 
-.promo__title {
+.promo h1 {
   position: relative;
   font-family: "Montserrat Bold", "Arial", sans-serif;
   font-size: 54px;
@@ -1421,7 +1421,7 @@ button,
   padding-left: 14.5%;
 }
 
-.promo__description {
+.promo p {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
   line-height: 19.6px;
@@ -1451,7 +1451,7 @@ button,
   column-gap: 40px;
 }
 
-.hero__title {
+.hero__wrapper h2 {
   font-family: "Montserrat SemiBold", "Arial", sans-serif;
   font-size: 28px;
   line-height: 42px;
@@ -1461,7 +1461,7 @@ button,
   padding-top: 56px;
 }
 
-.hero__description {
+.hero__wrapper p {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
   line-height: 19.6px;
@@ -1478,6 +1478,8 @@ button,
   min-height: 562px;
   padding: 0 20px;
   padding-top: 110px;
+  background-color: #e3ecf6;
+  z-index: -2;
 }
 
 .advantages__container {
@@ -1525,7 +1527,7 @@ button,
   text-align: center;
 }
 
-.advantages__container ul {
+.advantages__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -1538,7 +1540,7 @@ button,
   column-gap: 40px;
 }
 
-.advantages__container li {
+.advantages__item {
   background-color: #f9fbfd;
   padding: 30px;
   padding-bottom: 46px;
@@ -1696,6 +1698,8 @@ button,
   min-height: 555px;
   padding: 0 20px;
   padding-top: 50px;
+  background-color: #c6dbf4;
+  z-index: -2;
 }
 
 .form__container {
@@ -1717,7 +1721,7 @@ button,
   z-index: -1;
 }
 
-.form__title {
+.form__wrapper-desktop h2 {
   font-family: "Montserrat Bold", "Arial", sans-serif;
   font-size: 40px;
   line-height: 60px;
@@ -1725,7 +1729,7 @@ button,
   margin: 0;
 }
 
-.form__description {
+.form__wrapper-desktop p {
   font-family: "Montserrat Medium", "Arial", sans-serif;
   font-size: 18px;
   line-height: 27px;
@@ -2102,7 +2106,7 @@ button,
     height: 658px;
   }
 
-  .hero__title br {
+  .hero__wrapper h2 br {
     display: none;
   }
 
@@ -2178,14 +2182,14 @@ button,
     height: 638px;
   }
 
-  .promo__title {
+  .promo h1 {
     font-size: 50px;
     line-height: 60px;
     padding-left: 45px;
     padding-top: 188px;
   }
 
-  .promo__description {
+  .promo p {
     font-size: 18px;
     line-height: 21px;
     padding-left: 45px;
@@ -2199,7 +2203,7 @@ button,
     min-height: 464px;
   }
 
-  .hero__title {
+  .hero__wrapper h2 {
     font-size: 26px;
     line-height: 36px;
     padding: 0;
@@ -2228,13 +2232,13 @@ button,
     font-size: 26px;
   }
 
-  .advantages__container ul {
+  .advantages__list {
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
   }
 
-  .advantages__container li {
+  .advantages__item {
     padding: 22px 5px 20px 20px;
   }
 
@@ -2308,14 +2312,14 @@ button,
     height: 100%;
   }
 
-  .form__title {
+  .form__wrapper-desktop h2 {
     font-size: 34px;
     line-height: 51px;
     margin-bottom: 0;
     text-align: center;
   }
 
-  .form__description {
+  .form__wrapper-desktop p {
     margin-bottom: 53px;
     text-align: center;
     margin-top: 4px;
@@ -2572,14 +2576,14 @@ button,
     height: 500px;
   }
 
-  .promo__title {
+  .promo h1 {
     font-size: 36px;
     line-height: 45px;
     padding-left: 15px;
     padding-top: 109px;
   }
 
-  .promo__description {
+  .promo p {
     font-size: 16px;
     line-height: 22px;
     padding-left: 15px;
@@ -2597,7 +2601,7 @@ button,
     row-gap: 44px;
   }
 
-  .hero__title {
+  .hero__wrapper h2 {
     font-size: 24px;
     line-height: 33px;
   }
@@ -2620,7 +2624,7 @@ button,
     font-size: 24px;
   }
 
-  .advantages__container ul {
+  .advantages__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2680,19 +2684,19 @@ button,
     padding: 59px 15px;
   }
 
-  .form__title {
+  .form__wrapper-desktop h2 {
     font-size: 24px;
     line-height: 31px;
   }
 
-  .form__description {
+  .form__wrapper-desktop p {
     font-size: 16px;
     line-height: 22px;
     margin-top: 13px;
     margin-bottom: 35px;
   }
 
-  .form__description br {
+  .form__wrapper-desktop p br {
     display: none;
   }
 

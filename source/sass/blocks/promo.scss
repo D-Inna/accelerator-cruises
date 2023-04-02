@@ -31,7 +31,7 @@
   }
 }
 
-.promo__title {
+.promo h1 {
   position: relative;
   font-family: $ff-montserrat-bold;
   font-size: 54px;
@@ -59,7 +59,7 @@
   }
 }
 
-.promo__description {
+.promo p {
   @include description-text;
   position: relative;
   font-size: 20px;

@@ -4,6 +4,8 @@
   min-height: 562px;
   padding: 0 20px;
   padding-top: 110px;
+  background-color: #e3ecf6;
+  z-index: -2;
 
   @media (max-width: $vp-1023) {
     min-height: 588px;
@@ -90,7 +92,7 @@
   }
 }
 
-.advantages__container ul {
+.advantages__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -109,7 +111,7 @@
   }
 }
 
-.advantages__container li {
+.advantages__item {
   background-color: $color-nav;
   padding: 30px;
   padding-bottom: 46px;
