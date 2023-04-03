@@ -72,6 +72,12 @@
 }
 
 .main-footer__nav-list {
+  max-width: 764px;
+
+  @media (max-width: $vp-1023) {
+    max-width: 520px;
+  }
+
   @media (max-width: $vp-767) {
     row-gap: 8px;
   }

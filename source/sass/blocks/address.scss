@@ -46,7 +46,8 @@
 
 .address__map {
   min-width: 560px;
-  min-height: 306px;
+  height: 306px;
+  align-self: flex-start;
   background: url("../img/map/map-desktop.png") no-repeat center;
   background-size: 100%;
 
@@ -69,6 +70,7 @@
 
   @media (max-width: $vp-767) {
     order: 2;
+    align-self: stretch;
     min-height: 316px;
     min-width: 290px;
     background: url("../img/map/map-mobile.png") no-repeat center;

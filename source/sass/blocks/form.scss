@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   min-height: 555px;
-  padding: 50px 20px 20px;
+  padding: 50px 20px 50px;
   background-color: #c6dbf4;
   z-index: -2;
 
@@ -119,6 +119,7 @@
   padding-top: 43px;
   width: 403px;
   margin-left: auto;
+  align-self: flex-start;
 
   @media (max-width: $vp-1023) {
     margin: 0 auto;
