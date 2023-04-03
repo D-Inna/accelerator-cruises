@@ -1404,7 +1404,7 @@ button,
   position: absolute;
   top: -110px;
   width: 100%;
-  height: 117%;
+  height: 124%;
   -o-object-fit: cover;
   object-fit: cover;
   z-index: 1;
@@ -2282,17 +2282,18 @@ button,
   .catalog__list {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
+    gap: 4%;
     row-gap: 2%;
   }
 
   .catalog__item {
-    max-width: none;
-    width: 309px;
+    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
   }
 
   .catalog__image {
-    width: 309px;
+    width: 100%;
   }
 
   .catalog__wrapper dl {
@@ -2587,10 +2588,12 @@ button,
 
   .promo {
     min-height: 384px;
+    padding-bottom: 9%;
   }
 
   .promo__image {
     min-height: 544px;
+    height: 118%;
   }
 
   .promo h1 {

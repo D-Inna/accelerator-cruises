@@ -41,6 +41,7 @@
 
   @media (max-width: $vp-1023) {
     grid-template-columns: repeat(2, 1fr);
+    gap: 4%;
     row-gap: 2%;
   }
 
@@ -60,14 +61,14 @@
   height: 386px;
 
   @media (max-width: $vp-1023) {
-    max-width: none;
-    width: 309px;
+    // max-width: none;
+    // width: 309px;
+    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
   }
 
   @media (max-width: $vp-767) {
-    // max-width: 270px;
-    // width: 270px;
     margin: 0 auto;
     max-height: none;
     width: 100%;
@@ -82,7 +83,8 @@
   height: 100%;
 
   @media (max-width: $vp-1023) {
-    width: 309px;
+    //width: 309px;
+    width: 100%;
   }
 
   @media (max-width: $vp-767) {

@@ -10,6 +10,7 @@
 
   @media (max-width: $vp-767) {
     min-height: 384px;
+    padding-bottom: 9%;
   }
 }
 
@@ -17,7 +18,7 @@
   position: absolute;
   top: -110px;
   width: 100%;
-  height: 117%;
+  height: 124%;
   object-fit: cover;
   z-index: 1;
 
@@ -32,6 +33,7 @@
 
   @media (max-width: $vp-767) {
     min-height: 544px;
+    height: 118%;
   }
 }
 
