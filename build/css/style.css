@@ -1383,6 +1383,15 @@ button,
   color: #f9fbfd;
 }
 
+.user-list__link:hover,
+.user-list__linkfocus {
+  opacity: 0.7;
+}
+
+.user-list__link:active {
+  opacity: 0.5;
+}
+
 .main-container {
   color: #011c40;
   -webkit-box-flex: 1;
@@ -1542,6 +1551,7 @@ button,
   -webkit-column-gap: 40px;
   -moz-column-gap: 40px;
   column-gap: 40px;
+  row-gap: 30px;
   position: relative;
 }
 
@@ -2052,12 +2062,12 @@ button,
   align-self: flex-end;
 }
 
-.main-footer:hover,
-.main-footer:focus {
+.main-footer__logo:hover,
+.main-footer__logo:focus {
   opacity: 0.7;
 }
 
-.main-footer:active {
+.main-footer__logo:active {
   opacity: 0.3;
 }
 
@@ -2074,6 +2084,15 @@ button,
   padding: 0;
   margin: 0;
   max-width: 163px;
+}
+
+.social__link:hover,
+.social__link:focus {
+  opacity: 0.7;
+}
+
+.social__link:active {
+  opacity: 0.3;
 }
 
 /* @mixin hover-focus {
@@ -2652,7 +2671,6 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    row-gap: 30px;
   }
 
   .catalog {
