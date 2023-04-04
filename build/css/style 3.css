@@ -1715,6 +1715,7 @@ button,
   min-height: 555px;
   padding: 50px 20px 50px;
   background-color: #c6dbf4;
+  z-index: -2;
 }
 
 .form__container {
@@ -1734,6 +1735,7 @@ button,
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  z-index: -1;
 }
 
 .form__wrapper-desktop h2 {
@@ -1742,7 +1744,6 @@ button,
   line-height: 60px;
   font-weight: 700;
   margin: 0;
-  position: relative;
 }
 
 .form__wrapper-desktop p {
@@ -1753,7 +1754,6 @@ button,
   font-weight: 400;
   margin: 0;
   margin-top: 7px;
-  position: relative;
 }
 
 .form__modal-auth p {
@@ -1774,7 +1774,6 @@ button,
   margin-left: auto;
   -ms-flex-item-align: start;
   align-self: flex-start;
-  position: relative;
 }
 
 .form__modal-auth div {
