@@ -2698,6 +2698,8 @@ button,
 
   .catalog__image {
     width: 100%;
+    -o-object-fit: fill;
+    object-fit: fill;
   }
 
   .catalog__wrapper dl {
