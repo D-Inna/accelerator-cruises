@@ -2265,6 +2265,7 @@ button,
 
   .promo__image {
     min-height: 640px;
+    height: 1%;
   }
 
   .promo h1 {
@@ -2673,7 +2674,7 @@ button,
   }
 
   .promo__image {
-    min-height: 504px;
+    min-height: 488px;
   }
 
   .promo h1 {

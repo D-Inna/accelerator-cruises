@@ -31,12 +31,11 @@
 
   @media (max-width: $vp-1023) {
     min-height: 640px;
-
-    //height: 12%;
+    height: 1%;
   }
 
   @media (max-width: $vp-767) {
-    min-height: 504px;
+    min-height: 488px;
     //height: 1%;
   }
 }
