@@ -1,39 +1,43 @@
 .promo {
   background-color: $background-color;
-  min-height: 534px;
-  position: relative;
-  padding-bottom: 5%;
+  //min-height: 534px;
+  //position: relative;
+  //padding-bottom: 5%;
+  margin-bottom: 270px;
 
   @media (max-width: $vp-1023) {
-    min-height: 522px;
+    //min-height: 522px;
+    margin-bottom: 224px;
   }
 
   @media (max-width: $vp-767) {
-    min-height: 384px;
-    padding-bottom: 9%;
+    //min-height: 384px;
+    margin-bottom: 128px;
   }
 }
 
 .promo__image {
   position: absolute;
-  top: -110px;
   width: 100%;
-  height: 124%;
   object-fit: cover;
   z-index: 1;
+
+  top: 0;
+  //height: 16%;
 
   @media (min-width: $vp-1024) {
     min-height: 658px;
   }
 
   @media (max-width: $vp-1023) {
-    //min-height: 638px;
-    min-height: 668px;
+    min-height: 640px;
+
+    //height: 12%;
   }
 
   @media (max-width: $vp-767) {
-    min-height: 544px;
-    height: 118%;
+    min-height: 504px;
+    //height: 1%;
   }
 }
 
