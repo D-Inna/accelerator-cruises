@@ -2,6 +2,7 @@ const burgerMenu = () => {
   const iconHeader = document.querySelector('[data-burger]');
   const navHeader = document.querySelector('[data-nav]');
   const imageHeader = document.querySelector('[data-image]');
+  const overley = document.querySelector('.header__nav-background');
 
   if (iconHeader) {
     iconHeader.addEventListener('click', function () {
@@ -21,6 +22,23 @@ const burgerMenu = () => {
     }
   });
 
+  // document.addEventListener('click', function (e) {
+  //   if (!e.target.closest('.header__container')) {
+  //     iconHeader.classList.remove('is-open');
+  //     navHeader.classList.remove('is-open');
+  //     imageHeader.classList.remove('is-open');
+  //     document.body.classList.remove('lock');
+  //   }
+  // });
+
+  overley.addEventListener('click', function () {
+    if (overley) {
+      iconHeader.classList.remove('is-open');
+      navHeader.classList.remove('is-open');
+      imageHeader.classList.remove('is-open');
+      document.body.classList.remove('lock');
+    }
+  });
 
   window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {

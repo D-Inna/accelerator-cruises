@@ -127,7 +127,8 @@
   }
 
   @media (max-width: $vp-767) {
-    width: 290px;
+    width: 100%;
+    max-width: 403px;
     padding: 32px 30px 40px;
   }
 }
@@ -201,6 +202,19 @@
   }
 }
 
+.form__consent .input-message {
+  position: absolute;
+  left: 50px;
+  bottom: 104px;
+  font-size: 13px;
+  line-height: 14.6px;
+  width: 400px;
+
+  &.is-invalid {
+    color: #ff0000;
+  }
+}
+
 .form__modal-auth button {
   font-family: $ff-montserrat-semibold;
   font-size: 14px;
@@ -208,14 +222,14 @@
   background-color: $color-nav;
   color: $text-color;
   padding: 15px 20px;
-  min-width: 303px;
+  width: 100%;
   text-align: center;
   border: none;
   cursor: pointer;
   margin-top: 7px;
+  user-select: none;
 
   @media (max-width: $vp-767) {
-    min-width: 230px;
     margin-top: 5px;
   }
 }

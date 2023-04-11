@@ -38,15 +38,10 @@ body {
 body.lock {
   overflow: hidden;
 
-  .main-container {
-    opacity: 0.5;
-  }
-
   .header {
     background-color: #ffffff;
   }
 }
-
 
 a {
   color: $color-default-black;

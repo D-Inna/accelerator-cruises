@@ -404,7 +404,7 @@ template {
   font-family: "Montserrat SemiBold";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/montserrat-semi-bold.woff2") format("woff2"), url("../../fonts/montserrat-semi-bold.woff") format("woff");
+  src: url("../fonts/montserrat-semibold.woff2") format("woff2"), url("../fonts/montserrat-semibold.woff") format("woff");
   font-display: swap;
 }
 
@@ -451,10 +451,6 @@ body {
 
 body.lock {
   overflow: hidden;
-}
-
-body.lock .main-container {
-  opacity: 0.5;
 }
 
 body.lock .header {
@@ -1344,6 +1340,30 @@ button,
   z-index: 2;
 }
 
+.header__nav-background {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -35px;
+  z-index: 3;
+  width: 35px;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0, 43, 102, 0.5);
+}
+
+.header__nav.is-open ~ .header__nav-background {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0, 43, 102, 0.5);
+}
+
 .header__image-mobile {
   display: none;
 }
@@ -1466,7 +1486,7 @@ button,
 }
 
 .hero__wrapper h2 {
-  font-family: "Montserrat SemiBold", "Arial", sans-serif;
+  font-family: "Montserrat Semibold", "Arial", sans-serif;
   font-size: 28px;
   line-height: 42px;
   font-weight: 600;
@@ -1529,7 +1549,7 @@ button,
 }
 
 .advantages__title {
-  font-family: "Montserrat SemiBold", "Arial", sans-serif;
+  font-family: "Montserrat Semibold", "Arial", sans-serif;
   font-size: 28px;
   line-height: 42px;
   font-weight: 600;
@@ -1568,8 +1588,13 @@ button,
   padding: 85px 20px 150px;
 }
 
+.catalog__inner {
+  max-width: 1170px;
+  margin: 0 auto 120px;
+}
+
 .catalog__title {
-  font-family: "Montserrat SemiBold", "Arial", sans-serif;
+  font-family: "Montserrat Semibold", "Arial", sans-serif;
   font-size: 28px;
   line-height: 42px;
   font-weight: 600;
@@ -1596,8 +1621,8 @@ button,
   display: grid;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  -ms-grid-rows: 50px 260px 76px;
-  grid-template-rows: 50px 260px 76px;
+  -ms-grid-rows: 5% 75% 20%;
+  grid-template-rows: 5% 75% 20%;
   background-color: #011c40;
   padding: 0;
   max-width: 260px;
@@ -1651,7 +1676,7 @@ button,
 }
 
 .catalog__link {
-  font-family: "Montserrat SemiBold", "Arial", sans-serif;
+  font-family: "Montserrat Semibold", "Arial", sans-serif;
   font-size: 28px;
   line-height: 42px;
   font-weight: 600;
@@ -1667,6 +1692,7 @@ button,
   -ms-grid-row-span: 1;
   grid-row: 3/4;
   margin: 0 25px 35px;
+  height: 40px;
 }
 
 .catalog__item h3 {
@@ -1874,18 +1900,35 @@ button,
   color: #15ab07;
 }
 
+.form__consent .input-message {
+  position: absolute;
+  left: 50px;
+  bottom: 104px;
+  font-size: 13px;
+  line-height: 14.6px;
+  width: 400px;
+}
+
+.form__consent .input-message.is-invalid {
+  color: #ff0000;
+}
+
 .form__modal-auth button {
-  font-family: "Montserrat SemiBold", "Arial", sans-serif;
+  font-family: "Montserrat Semibold", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   background-color: #f9fbfd;
   color: #011c40;
   padding: 15px 20px;
-  min-width: 303px;
+  width: 100%;
   text-align: center;
   border: none;
   cursor: pointer;
   margin-top: 7px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .form__consent button:hover {
@@ -2018,6 +2061,10 @@ button,
 
 .address__link {
   margin-bottom: 20px;
+}
+
+.address__link--tel {
+  width: 180px;
 }
 
 .main-footer {
@@ -2310,10 +2357,13 @@ button,
     max-width: 100%;
     width: 100%;
     margin: 0 auto;
+    aspect-ratio: 1/1.25;
+    height: auto;
   }
 
   .catalog__image {
     width: 100%;
+    height: auto;
   }
 
   .catalog__wrapper dl {
@@ -2463,6 +2513,7 @@ button,
     max-width: 767px;
     min-width: 320px;
     padding: 0 15px;
+    position: relative;
   }
 
   .header__container {
@@ -2479,10 +2530,10 @@ button,
 
   .header__nav {
     position: fixed;
-    z-index: 3;
+    z-index: 4;
     top: 0;
     right: -100vw;
-    width: 96%;
+    width: 89%;
     height: 100%;
     min-width: 240px;
     background-color: #f9fbfd;
@@ -2510,14 +2561,14 @@ button,
   .header__image-mobile {
     display: block;
     margin-top: 0;
-    margin-bottom: 9%;
+    margin-bottom: 17%;
   }
 
   .header__icon {
     display: block;
     z-index: 5;
     position: relative;
-    width: 24px;
+    width: 21px;
     height: 12px;
     cursor: pointer;
   }
@@ -2559,7 +2610,8 @@ button,
   }
 
   .header__icon.is-open::before {
-    top: 50%;
+    top: 71%;
+    left: 29%;
     -webkit-transform: rotate(-45deg) translate(0, -50%);
     -ms-transform: rotate(-45deg) translate(0, -50%);
     transform: rotate(-45deg) translate(0, -50%);
@@ -2567,7 +2619,8 @@ button,
   }
 
   .header__icon.is-open::after {
-    bottom: 50%;
+    bottom: 28%;
+    left: 24%;
     -webkit-transform: rotate(45deg) translate(0, 50%);
     -ms-transform: rotate(45deg) translate(0, 50%);
     transform: rotate(45deg) translate(0, 50%);
@@ -2579,7 +2632,8 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 26px;
+    padding-left: 10px;
   }
 
   .user-list__item {
@@ -2694,6 +2748,7 @@ button,
     max-height: none;
     width: 100%;
     height: auto;
+    aspect-ratio: 1/1.42;
   }
 
   .catalog__image {
@@ -2745,7 +2800,8 @@ button,
   }
 
   .form__modal-auth {
-    width: 290px;
+    width: 100%;
+    max-width: 403px;
     padding: 32px 30px 40px;
   }
 
@@ -2754,7 +2810,6 @@ button,
   }
 
   .form__modal-auth button {
-    min-width: 230px;
     margin-top: 5px;
   }
 
@@ -2833,6 +2888,7 @@ button,
 
   .main-footer__nav-list {
     row-gap: 8px;
+    padding: 0;
   }
 
   .main-footer__social {
