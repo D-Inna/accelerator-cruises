@@ -5,7 +5,7 @@
   padding: 85px 20px 120px;
 
   @media (max-width: $vp-1023) {
-    padding: 90px 60px 180px;
+    padding: 90px 60px 105px;
   }
 
   @media (max-width: $vp-767) {
@@ -41,8 +41,8 @@
 
   @media (max-width: $vp-1023) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 4%;
-    row-gap: 2%;
+    gap: 5%;
+    row-gap: 30px;
   }
 
   @media (max-width: $vp-767) {

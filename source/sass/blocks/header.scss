@@ -4,6 +4,7 @@
   margin: 0 auto;
   background-color: $background-color;
   padding: 0 20px;
+  position: absolute;
 
   @media (max-width: $vp-1023) {
     max-width: 1023px;
@@ -14,7 +15,6 @@
     max-width: 767px;
     min-width: 320px;
     padding: 0 15px;
-    position: relative;
   }
 }
 
