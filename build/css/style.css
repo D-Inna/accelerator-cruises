@@ -2837,9 +2837,11 @@ button,
     margin-top: 5px;
   }
 
-  .form__consent input[type=checkbox] {
-    width: 23px;
-    margin-right: 12px;
+  .form__consent label {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 27px auto;
+    grid-template-columns: 27px auto;
   }
 
   .address {

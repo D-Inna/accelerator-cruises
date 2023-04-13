@@ -246,6 +246,11 @@
   position: relative;
   display: flex;
   align-items: center;
+
+  @media (max-width: $vp-767) {
+    display: grid;
+    grid-template-columns: 27px auto;
+  }
 }
 
 .form__consent input[type="checkbox"] {
@@ -259,11 +264,6 @@
   appearance: none;
   cursor: pointer;
   margin-right: 5px;
-
-  @media (max-width: $vp-767) {
-    width: 23px;
-    margin-right: 12px;
-  }
 }
 
 .form__consent input[type="checkbox"]:checked::after {
